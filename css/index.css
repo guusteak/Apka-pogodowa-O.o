@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+* {
+    font-family: "Oswald";
+}
+
+.page {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+.page__header {
+    z-index: 2;
+    position: relative;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.page__arrow {
+    font-size: 3rem;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.page__right {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    right: 5%;
+}
+.page__right:hover {
+    cursor: pointer;
+}
+.page__left {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 3;
+}
+.page__left:hover {
+    cursor: pointer;
+}
+
+.welcome {
+    min-height: 500px;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    z-index: 1;
+}
+.welcome__section {
+    height: 800px;
+    min-height: 500px;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+.welcome__image {
+    width: 100%;
+    height: 70%;
+}
+.welcome__image--krakow {
+    background: url("../images/Krakow.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcome__image--krasnik {
+    background: url("../images/Kraśnik.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcome__image--debica {
+    background: url("../images/Dębica.jpg");
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcome__image--lachowice {
+    background: url("../images/Lachowice.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcome__header {
+    display: flex;
+    justify-content: center;
+}
+.welcome__description {
+    display: flex;
+    justify-content: center;
+}
+.welcome__background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.welcome__background--krakow {
+    background: url("../images/Krakow.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+.welcome__background--krasnik {
+    background: url("../images/Kraśnik.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+.welcome__background--debica {
+    background: url("../images/Dębica.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+.welcome__background--lachowice {
+    background: url("../images/Lachowice.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+
+.main {
+    order: 2;
+}
+
+.next {
+    order: 3;
+}
+
+.previous {
+    order: 1;
+}
+
+.slideleft {
+    -webkit-animation: fade-slide-out 0.3s ease-out forwards;
+    animation: fade-slide-out 0.3s ease-out forwards;
+}
+
+.slideright {
+    -webkit-animation: fade-slide-in 0.3s ease-out forwards;
+    animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+.back {
+    display: none;
+}
+
+.bb {
+    z-index: -1;
+}
+
+@-webkit-keyframes fade-slide-in {
+    from {
+        transform: translateX(5rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-slide-in {
+    from {
+        transform: translateX(5rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@-webkit-keyframes fade-slide-out {
+    from {
+        transform: translateX(-5rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fade-slide-out {
+    from {
+        transform: translateX(-5rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.proper {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+.proper__title {
+    font-size: 5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.proper__description {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    width: 1000px;
+}
+.proper__about {
+    max-width: 500px;
+    width: 50%;
+}
+.proper__image {
+    max-height: 400px;
+    flex-basis: 50%;
+}
+
+.button-back {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid crimson;
+    bottom: 10px;
+    left: calc(50% - 100px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: aquamarine;
+}/*# sourceMappingURL=main.css.map */
