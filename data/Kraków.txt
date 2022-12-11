@@ -2,3 +2,5 @@
 In Kraków there is 0.3C, 95.7% of humidity and pressure of 1007.1hPa
 10.12.2022, 20:55:16
 In Kraków there is 0.3C, 95.7% of humidity and pressure of 1007.1hPa
+11.12.2022, 23:44:40
+In Kraków there is -3.4C, 87.9% of humidity and pressure of 1005.9hPa

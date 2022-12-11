@@ -244,4 +244,8 @@
     text-align: center;
     justify-content: center;
     background-color: aquamarine;
-}/*# sourceMappingURL=main.css.map */
+}
+.main:hover{
+    cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

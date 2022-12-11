@@ -95,12 +95,18 @@ function next(e){
             console.log("tu normalnie lezy");
             let splitter = e.path[1].id.replace("main", "");
             console.log(splitter);
-            document.querySelector("#pass"+splitter).classList.remove('back');
+            let you = document.querySelector("#pass"+splitter);
+            you.classList.remove('back');
             document.querySelector(".welcome").classList.add('back');
             document.querySelector(".page__arrow").classList.add('back');
             document.querySelector(".page__header").classList.add('back');
+            const li = document.createDocumentFragment();
+            li.appendChild('p');
+            li.textContent('lorem ipsum dolor sit amet');
+            you.appendChild(li);
             break;
     }
+
 }
 document.querySelectorAll(".button-back").forEach((elm)=>{elm.addEventListener("click", () => {
     console.log('time after time');
@@ -111,6 +117,3 @@ document.querySelectorAll(".button-back").forEach((elm)=>{elm.addEventListener("
         document.querySelector("#pass"+i).classList.add("back");
     }})
 })
-
-const krakow = fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Krak%C3%B3w?unitGroup=metric&key=YOUR_API_KEY&contentType=json'
-).then(response => response.json());
